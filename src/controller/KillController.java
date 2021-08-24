@@ -40,7 +40,7 @@ public class KillController {
 			process = "TASKKILL /PID "+ name;
 			readProcess(process);
 		}else {
-			process = " kill -9 "+ name;
+			process = "pkill -f "+ name;
 			readProcess(process);
 		}
 	}
